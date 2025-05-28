@@ -1,0 +1,206 @@
+body {
+    padding-top: 56px; /* Para que el contenido no quede debajo de la barra de navegación fija */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8f0; /* Un verde pastel muy claro para el fondo del cuerpo */
+    color: #333; /* Texto oscuro para buena legibilidad */
+}
+
+.navbar.bg-primary {
+    background-color: #008080 !important; /* Verde Esmeralda para la barra de navegación */
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 128, 128, 0.7), rgba(0, 128, 128, 0.7)), /* Opacidad de Verde Esmeralda */
+                url('https://via.placeholder.com/1500x500/008080/ffffff?text=Fondo+Electoral') no-repeat center center/cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.hero-section p.lead {
+    font-size: 1.5rem;
+}
+
+/* Botones principales de la hero-section */
+.btn-warning {
+    background-color: #77DD77; /* Verde Pastel para el botón de registro */
+    border-color: #77DD77;
+    color: #333; /* Texto oscuro para el botón pastel */
+    font-weight: bold;
+}
+
+.btn-warning:hover {
+    background-color: #66cc66; /* Un verde pastel un poco más oscuro al pasar el mouse */
+    border-color: #66cc66;
+}
+
+/* Estilos para las secciones principales */
+section {
+    padding: 40px 20px;
+    margin-bottom: 3rem;
+    background-color: #ffffff; /* Fondo blanco para las secciones internas */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #006666; /* Un verde esmeralda más oscuro para los títulos de sección */
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Estilos para los formularios */
+.form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #008080; /* Verde Esmeralda en el foco */
+    box-shadow: 0 0 0 0.25rem rgba(0, 128, 128, 0.25);
+}
+
+/* Botones de acción en formularios (Registrarse, Ingresar, Enviar) */
+.btn-primary {
+    background-color: #008080; /* Verde Esmeralda para botones primarios */
+    border-color: #008080;
+}
+
+.btn-primary:hover {
+    background-color: #006666; /* Verde Esmeralda más oscuro al pasar el mouse */
+    border-color: #006666;
+}
+
+.btn-success {
+    background-color: #008080; /* Usamos Verde Esmeralda también para el botón de Ingresar */
+    border-color: #008080;
+}
+
+.btn-success:hover {
+    background-color: #006666;
+    border-color: #006666;
+}
+
+/* Estilos para las tarjetas de candidato */
+.candidate-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: #fefefe;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.candidate-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.candidate-card.selected {
+    border-color: #77DD77; /* Borde Verde Pastel cuando está seleccionado */
+    box-shadow: 0 0 0 0.25rem rgba(119, 221, 119, 0.25), 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.candidate-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #008080; /* Borde de imagen Verde Esmeralda */
+}
+
+.candidate-card h5 {
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 600;
+}
+
+.candidate-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Estilos para las barras de progreso de resultados */
+.progress {
+    height: 30px;
+    margin-bottom: 15px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    background-color: #008080; /* Verde Esmeralda para las barras de progreso */
+    font-weight: bold;
+    color: white;
+    text-align: right;
+    padding-right: 10px; /* Espacio para el texto de porcentaje */
+    line-height: 30px;
+}
+
+.candidate-result-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.candidate-result-item .candidate-name {
+    flex: 0 0 150px; /* Ancho fijo para el nombre del candidato */
+    font-weight: bold;
+    margin-right: 15px;
+    color: #333;
+}
+
+.candidate-result-item .progress-container {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #2c3e50; /* Un tono oscuro para el footer */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Scrollspy para navegación fluida */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para alertas */
+.alert-success {
+    background-color: #d4edda; /* Verde pastel claro para éxito */
+    border-color: #c3e6cb;
+    color: #155724; /* Texto verde oscuro */
+}
+
+.alert-info {
+    background-color: #d1ecf1; /* Azul claro para información */
+    border-color: #bee5eb;
+    color: #0c5460; /* Texto azul oscuro */
+}
+
+/* Botón de cerrar sesión */
+.btn-outline-light {
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: #008080; /* Texto verde esmeralda al pasar el mouse */
+}
+
+/* Colores para placehodler de candidatos */
+/* Si se usan placehodlers, el color de fondo de estos debería ser verde esmeralda si el texto es blanco */
